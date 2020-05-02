@@ -13,6 +13,11 @@ Email: victoria.tran@csu.fullerton.edu
 C++
 
 # How to execute Program:
-1. 
-2.
-3.
+1. Open two separate terminals
+2. In one terminal, go to the server directory and run the server. Then enter the following into the terminal
+  ~ make 
+  ~ ./server <PORT NUMBER>
+3. In the other terminal, go to the client directory and run the client. Type the following commands
+  ~ make 
+  ~ ./client <IP Address> <PORT NUMBER>
+4. Run the four different types of commands: get, put, ls, quit.
