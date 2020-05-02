@@ -13,7 +13,8 @@
   - quit: The client closes the connection.
 
 3) The message exchanges that must take place in order to set up a file transfer
+- The name and size of the file must be exchanged
+- The commands that actually transfer the files, get or put, must also be exchanged.
 
 4) How the receiving side will know when to start and stop receiving the file
-
-5) How to avoid overflowing TCP Buffers
+- As the receiving side retrieves the file, the filesize of the sent file is used to determine the start or stop of receiving file. 
