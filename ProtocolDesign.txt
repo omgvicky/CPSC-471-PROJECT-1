@@ -1,0 +1,19 @@
+## PROTOCOL DESIGN 
+
+1) The types of messages that will be exchanged across the control chanel
+  - get: Retrieve files from the server
+  - put: Sends files from client to the server
+  - ls: Lists the files that reside on the server
+  - quit: Closes the server
+  
+2) Expected response from each type of message 
+  - get: The server will receive the filename and then retrieve the file.
+  - put: The client will send the server the filename as well as the file size.
+  - ls: The server will retrieve all of the filenames in the server directory and send it to the client. The client will then display the list of files 
+  - quit: The client closes the connection.
+
+3) The message exchanges that must take place in order to set up a file transfer
+
+4) How the receiving side will know when to start and stop receiving the file
+
+5) How to avoid overflowing TCP Buffers
